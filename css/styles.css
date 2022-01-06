@@ -1,0 +1,167 @@
+:root {
+	--bg-primary: #010409;
+	--bg-secondary: #161b22;
+	--bg-sidebar: #0d1117;
+	--bg-blue: #1e3250;
+	--font-color: #aaaeb3;
+	--title: #c9d1d9;
+	--border-primary: #30363d;
+	--border-blue: #4e9cf7;
+	--title-blue: #4e9cf7;
+	--hover: #888a8d;
+	--active: #c9d1d9;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	min-width: 320px;
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+	background-color: var(--bg-primary);
+	color: var(--font-color);
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--bg-secondary);
+}
+
+.logo-container {
+	/* height: 10vh; */
+	margin: 1rem 0 0;
+}
+
+.logo-container__logo {
+	display: block;
+	width: 10vh;
+	height: 10vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 5vh;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-nav__item a {
+	color: var(--title);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.main-nav__item a:hover {
+	color: var(--hover);
+}
+
+.main-nav__item a:active {
+	color: var(--active);
+}
+
+.s1 {
+	background-color: var(--bg-sidebar);
+}
+
+.repo-info,
+.recent-activity {
+	padding: 2rem;
+}
+
+.title {
+	margin: 0 0 1rem;
+	color: var(--title);
+}
+
+.repo-list {
+	margin: 0;
+	padding: 0 0 0 2rem;
+	list-style:circle;
+}
+
+.repo-list__item a {
+	text-decoration: none;
+	color: var(--hover);
+}
+
+.repo-list__item a:hover {
+	text-decoration: underline;
+}
+
+.recent-activity {
+	border-top: 1px solid var(--border-primary);
+}
+
+.recent-activity .text {
+	margin: 0;
+	font-size: 1.3rem;
+	line-height: 1.6rem;
+}
+
+.s2 {
+	padding: 2rem 2rem 0;
+}
+
+.s2-title, .post-title {
+	color: var(--title-blue);
+}
+
+.s2-title {
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid var(--border-primary);
+}
+
+.posts {
+	display: flex;
+	flex-direction: column;
+}
+
+.post {
+	width: 100%;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	border: 1px solid var(--border-primary);
+	border-radius: 0.5rem;
+	background-color: var(--bg-secondary);
+}
+
+.post-content {
+	margin: 0 0 1rem;
+}
+
+.post a {
+	text-decoration: none;
+	color: var(--title-blue);
+}
+
+.post a:hover {
+	text-decoration: underline;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+    height: 15vh;
+    margin: 0 auto;
+    border-top: 1px solid var(--border-primary);
+    color: var(--border-primary);
+}

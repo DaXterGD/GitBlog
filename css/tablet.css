@@ -1,0 +1,51 @@
+:root {
+	--bg-primary: #010409;
+	--bg-secondary: #161b22;
+	--bg-sidebar: #0d1117;
+	--bg-blue: #1e3250;
+	--font-color: #aaaeb3;
+	--title: #c9d1d9;
+	--border-primary: #30363d;
+	--border-blue: #4e9cf7;
+	--title-blue: #4e9cf7;
+	--hover: #888a8d;
+	--active: #c9d1d9;
+}
+
+.header {
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    width: 80%;
+}
+
+.logo-container {
+    margin: 0;
+}
+
+.logo-container__logo {
+    width: 7vh;
+    height: 7vh;
+}
+
+.main-content {
+    display: flex;
+}
+
+.s1 {
+    width: 25%;
+    min-width: 20rem;
+    border-right: 1px solid var(--border-primary);
+}
+
+.s2 {
+    width: 75%;
+}
+
+.footer {
+    width: 100%;
+}
