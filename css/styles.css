@@ -35,6 +35,7 @@ body {
 	top: 0;
 	display: flex;
 	flex-direction: column;
+	box-shadow: 0 5px 20px #101113b7;
 	background-color: var(--bg-secondary);
 }
 
@@ -140,7 +141,7 @@ body {
 	margin-bottom: 2rem;
 	border: 1px solid var(--border-primary);
 	border-radius: 0.5rem;
-	background-color: var(--bg-secondary);
+	background-color: var(--bg-sidebar);
 }
 
 .post-content {
